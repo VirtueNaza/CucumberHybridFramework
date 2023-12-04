@@ -77,10 +77,15 @@ public class HomePage {
         utils.mouseHover(laptopsSubHeaders, MyUtils.Explicit_Wait_Time);
     }
 
+<<<<<<< HEAD
     public ProductCategoryPage clickLaptopsSubHeadersDropDown(){
         utils.clickOnElement(laptopsSubHeadersDropDown, MyUtils.Explicit_Wait_Time);
        ProductCategoryPage productCategoryPage = new ProductCategoryPage(driver);
        return productCategoryPage;
+=======
+    public void clickLaptopsSubHeadersDropDown(){
+        utils.clickOnElement(laptopsSubHeadersDropDown, MyUtils.Explicit_Wait_Time);
+>>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
 
 
     }

@@ -31,7 +31,11 @@ public class AddToCart {
 
     @When("user clicks on Add To Cart button\\(Product category page)")
     public void user_Clicks_On_Add_To_Cart_Button_Product_Category_Page() {
+<<<<<<< HEAD
         productCategoryPage = new ProductCategoryPage(driver);
+=======
+        productDisplayPage = new ProductDisplayPage(driver);
+>>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
 
         productCategoryPage.clickOnAddToCartButton();
 
@@ -39,7 +43,10 @@ public class AddToCart {
 
     @And("selects a delivery date from delivery date field")
     public void selects_A_Delivery_Date_From_Delivery_Date_Field() {
+<<<<<<< HEAD
        productDisplayPage = new ProductDisplayPage(driver);
+=======
+>>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
         productDisplayPage.typeCalendarDate();
 
     }
@@ -53,7 +60,12 @@ public class AddToCart {
 
     @Then("success message indicating product added should be displayed")
     public void success_Message_Indicating_Product_Added_Should_Be_Displayed() {
+<<<<<<< HEAD
         assertTrue(productDisplayPage.verifySuccessMessage().contains("Success"));
+=======
+        assertEquals(productDisplayPage.verifySuccessMessage()
+                , "Success: You have added HP LP3065 to your shopping cart!");
+>>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
     }
 
     @And("clicks on Add to cart button\\(Product display page)")

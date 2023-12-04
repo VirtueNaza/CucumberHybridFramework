@@ -22,6 +22,7 @@ public class ProductCategoryPage {
     private WebElement addToCart;
 
 
+<<<<<<< HEAD
     public ProductDisplayPage clickOnAddToCartButton() {
         utils.clickOnElement(addToCart, MyUtils.Explicit_Wait_Time);
         return new ProductDisplayPage(driver);
@@ -29,5 +30,12 @@ public class ProductCategoryPage {
        /* ProductDisplayPage productDisplayPage = new ProductDisplayPage(driver);
         return productDisplayPage;
        */
+=======
+    public void  clickOnAddToCartButton() {
+        utils.clickOnElement(addToCart, MyUtils.Explicit_Wait_Time);
+       // return new ProductDisplayPage(driver);
+       // addToCart.click();
+
+>>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
     }
 }
