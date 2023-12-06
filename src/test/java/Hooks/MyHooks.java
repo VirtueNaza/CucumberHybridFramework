@@ -33,17 +33,11 @@ public class MyHooks {
 
 
        if(scenario.isFailed()){
-<<<<<<< HEAD
+
             byte[] base64Screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(base64Screenshot, "image/png" ,testName+"test failed");
 
         }
-=======
-           byte[] base64Screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-           scenario.attach(base64Screenshot, "image/png" ,testName+"test failed");
-
-       }
->>>>>>> 250c9764f758c0bb032ac01f58741cd56330a463
 
         driver.quit();
 
