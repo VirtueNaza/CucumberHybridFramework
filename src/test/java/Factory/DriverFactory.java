@@ -11,13 +11,20 @@ import java.time.Duration;
 public class DriverFactory {
     static WebDriver driver;
 
-    public static void initializeBrowser(String browserName){
+    public static void initializeBrowser(String browserName) {
         if(browserName.equals("chrome")){
             driver = new ChromeDriver();
         }else if(browserName.equals("edge")){
             driver = new EdgeDriver();
         } else if (browserName.equals("firefox")) {
             driver = new FirefoxDriver();
+        }
+
+        switch (browserName){
+            case "chrome": driver=new ChromeDriver();
+            case "fireFox": driver = new FirefoxDriver();
+            case "edge" : driver = new EdgeDriver();
+
         }
 
     }

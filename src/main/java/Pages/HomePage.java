@@ -37,6 +37,9 @@ public class HomePage {
     @FindBy(linkText = "Show AllLaptops & Notebooks")
     private WebElement laptopsSubHeadersDropDown;
 
+    @FindBy(xpath = "//span[text()='Wish List (0)']")
+    private WebElement wishListButton;
+
 
 
 
@@ -84,6 +87,10 @@ public class HomePage {
 
     public void clickOnLaptopSubHeaders(){
         dropDown.click();
+    }
+
+    public void clickOnWishList(){
+        utils.clickOnElement(wishListButton, MyUtils.Explicit_Wait_Time);
     }
 
 
